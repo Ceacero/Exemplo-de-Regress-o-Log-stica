@@ -100,7 +100,7 @@ ggplot(mapping = aes(x = iris$Petal.Length[iris$Species == "versicolor"])) +
                  color = "black",
                  aes(y = ..density..),
                  bins = 9) +
-  labs(title = "Comprimento de pétalas de flores da espécie setosa",
+  labs(title = "Comprimento de pétalas de flores da espécie versicolor",
        x = "Comprimento de pétalas",
        y = "Densidade de flores") +
   stat_function(fun = dnorm,
@@ -116,7 +116,7 @@ ggplot(mapping = aes(x = iris$Petal.Length[iris$Species == "virginica"])) +
                  color = "black",
                  aes(y = ..density..),
                  bins = 9) +
-  labs(title = "Comprimento de pétalas de flores da espécie setosa",
+  labs(title = "Comprimento de pétalas de flores da espécie virginica",
        x = "Comprimento de pétalas",
        y = "Densidade de flores") +
   stat_function(fun = dnorm,
